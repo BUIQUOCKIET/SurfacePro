@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfacePro</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico"/>
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Begin: Header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="headertop-row">
+                    <span class="header-top__text">Máy tính bảng Surface chính hãng mới và cũ giá tốt nhất</span>
+                    <div class="hotline">
+                        <i class="fas fa-calendar-check"></i>
+                        <a href="#" class="hotline__link">Kiểm tra bảo hành</a>
+                        |
+                        <i class="fas fa-phone-square-alt"></i>
+                        <span>Hotline: <span class="hotline__phone">0915.111111</span></span>
+                        |
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: <a href="" class="hotline__link">lienhe@surfacepro.vn</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mid">
+                <div class="header-logo">
+                    <a class="header-logo__link" href="./index.html" title="Máy tính bảng Surface chính hãng mới và cũ giá tốt nhất">
+                        <img class="header-logo__img" src="./assets/images/logo-blue.png" alt="">
+                    </a>
+                </div>
+                <div class="header-search">
+                    <form class="header-form">
+                        <input class="header-form__input" type="text" placeholder="Tìm kiếm sản phẩm, tin tức, video ..." required>
+                        <button class="header-form__btn" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="header-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="header-cart__text">Giỏ hàng</span>
+                    <span class="header-cart__count">0</span>
+                </div>
+            </div>
+            <div class="navigation">
+                <!-- Menu PC -->
+                <div class="menu">
+                    <div class="container">
+                        <ul class="list">
+                            <li class="list-item">
+                                <a href="./index.html" class="list__link list__link-home active">
+                                    <i class="fas fa-home"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="" class="list__link list__link--click">
+                                    Surface Store
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="submenu--click triangle unrotate3d">
+                                    <div class="submenu-row">
+                                        <li>
+                                            <span class="submenu--click__title">SURFACE PRO</span>
+                                            <div class="submenu--click__img">
+                                                <img src="./assets/images/SurfaceStore/surface-pro.jpg" alt="">
+                                            </div>
+                                            <div class="submenu-list">
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Pro 3
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Pro 5
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Pro 6
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Pro 7
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Pro X
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="submenu--click__title">SURFACE LAPTOP</span>
+                                            <div class="submenu--click__img">
+                                                <img src="./assets/images/SurfaceStore/surface-laptop.jpg" alt="">
+                                            </div>
+                                            <div class="submenu-list">
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Laptop
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Laptop 3
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Laptop 5
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="submenu--click__title">SURFACE BOOK</span>
+                                            <div class="submenu--click__img">
+                                                <img src="./assets/images/SurfaceStore/surface-book.jpg" alt="">
+                                            </div>
+                                            <div class="submenu-list">
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Book
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Book 2
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="submenu--click__title">SURFACE STUDIO</span>
+                                            <div class="submenu--click__img">
+                                                <img src="./assets/images/SurfaceStore/surface-studio.jpg" alt="">
+                                            </div>
+                                            <div class="submenu-list">
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Studio
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Studio 2
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="submenu--click__title">SURFACE GO</span>
+                                            <div class="submenu--click__img">
+                                                <img src="./assets/images/SurfaceStore/surface-go.jpg" alt="">
+                                            </div>
+                                            <div class="submenu-list">
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Go
+                                                </a>
+                                                <a href="" class="submenu-list__link">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    Surface Go 2
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="" class="list__link">
+                                    Phụ Kiện Surface
+                                </a>
+                                <ul class="submenu triangle">
+                                    <li><a href="" class="submenu__link">Bàn phím</a></li>
+                                    <li><a href="" class="submenu__link">Bút & Chuột</a></li>
+                                    <li><a href="" class="submenu__link">Sạc & Dock</a></li>
+                                    <li><a href="" class="submenu__link">Kết nối</a></li>
+                                    <li><a href="" class="submenu__link">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="" class="list__link">
+                                    Tin Tức
+                                </a>
+                                <ul class="submenu triangle">
+                                    <li><a href="" class="submenu__link">Tin Thị Trường</a></li>
+                                    <li><a href="" class="submenu__link">Review Sản Phẩm</a></li>
+                                    <li><a href="" class="submenu__link">Thủ Thuật & Ứng Dụng</a></li>
+                                    <li><a href="" class="submenu__link">Góc Khách Hàng</a></li>
+                                    <li><a href="" class="submenu__link">Sự Kiện - Khuyến Mãi</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-item">
+                                <a href="" class="list__link">
+                                    Video
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="" class="list__link">
+                                    Liên Hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu Mobile -->
+                <div class="nav-mobile">
+                    <div class="nav-btn">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="./index.html" class="nav-logo__link">
+                            <img src="./assets/images/mobile_logo_blue.png" alt="" class="nav-logo__img">
+                        </a>
+                    </div>
+                    <div class="nav-search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <form action="" class="nav-search-control unrotate3d">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm, tin tức, video ..." id="" class="nav-search__input">
+                        <div class="nav-search__close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="mobile-menu unrotate3d">
+                    <ul>
+                        <li>
+                            <a href="">Surface Store</a>
+                            <ul class="mobile-menu-sub">
+                                <li>
+                                    <a href="">SURFACE PRO</a>
+                                    <ul class="mobile-menu-sub--child">
+                                        <li><a href="">Surface Pro 3</a></li>
+                                        <li><a href="">Surface Pro 5</a></li>
+                                        <li><a href="">Surface Pro 6</a></li>
+                                        <li><a href="">Surface Pro 7</a></li>
+                                        <li><a href="">Surface Pro X</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">SURFACE LAPTOP</a>
+                                    <ul class="mobile-menu-sub--child">
+                                        <li><a href="">Surface Laptop</a></li>
+                                        <li><a href="">Surface Laptop 2</a></li>
+                                        <li><a href="">Surface Laptop 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">SURFACE BOOK</a>
+                                    <ul class="mobile-menu-sub--child">
+                                        <li><a href="">Surface Book</a></li>
+                                        <li><a href="">Surface Book 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">SURFACE STUDIO</a>
+                                    <ul class="mobile-menu-sub--child">
+                                        <li><a href="">Surface Studio</a></li>
+                                        <li><a href="">Surface Studio 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">SURFACE GO</a>
+                                    <ul class="mobile-menu-sub--child">
+                                        <li><a href="">Surface Go</a></li>
+                                        <li><a href="">Surface Go 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Phụ Kiện Surface</a>
+                            <ul class="mobile-menu-sub mobile-menu-sub--none">
+                                <li><a href="">Bàn phím</a></li>
+                                <li><a href="">Bút & Chuột</a></li>
+                                <li><a href="">Sạc & Dock</a></li>
+                                <li><a href="">Kết nối</a></li>
+                                <li><a href="">Khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Tin Tức</a>
+                            <ul class="mobile-menu-sub mobile-menu-sub--none">
+                                <li><a href="">Tin Thị Trường</a></li>
+                                <li><a href="">Review Sản Phẩm</a></li>
+                                <li><a href="">Thủ Thuật & Ứng Dụng</a></li>
+                                <li><a href="">Góc Khách Hàng</a></li>
+                                <li><a href="">Sự Kiện - Khuyến Mãi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Video</a></li>
+                        <li><a href="">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End: Header -->
+        
+        <!-- Begin: Content -->
+        <div class="content">
+            <div class="container">
+                <!-- Slide and News hot -->
+                <div class="news">
+                    <div class="news-slide">
+                        <div class="slide-body">
+                            <a href="#" class="slide-link">
+                                <img src="./assets/images/SlideShow/surface-go-2-12tr5.jpg" alt="" class="slide-link__img">
+                            </a>
+                            <a href="#" class="slide-link">
+                                <img src="./assets/images/SlideShow/surface-pro-7-i7-tang-pen.jpg" alt="" class="slide-link__img">
+                            </a>
+                            <a href="#" class="slide-link">
+                                <img src="./assets/images/SlideShow/surface-pro-x-69lvs.png" alt="" class="slide-link__img">
+                            </a>
+                            <a href="#" class="slide-link">
+                                <img src="./assets/images/SlideShow/surface-laptop-3-69lvs.png" alt="" class="slide-link__img">
+                            </a>
+                            <a href="#" class="slide-link">
+                                <img src="./assets/images/SlideShow/phu-kien.jpg" alt="" class="slide-link__img">
+                            </a>
+                            <button class="slide-previous" onclick="plusSlide(-1)">
+                                <i class="fas fa-chevron-left slide-previous__icon"></i>
+                            </button>
+                            <button class="slide-next" onclick="plusSlide(+1)">
+                                <i class="fas fa-chevron-right slide-next__icon"></i>
+                            </button>
+                        </div>
+                        <div class="slide-title">
+                            <span class="slide-title__text" onclick="currentSlide(1)">Surface Go 2</span>
+                            <span class="slide-title__text" onclick="currentSlide(2)">Surface Pro 7</span>
+                            <span class="slide-title__text" onclick="currentSlide(3)">Surface Pro X</span>
+                            <span class="slide-title__text" onclick="currentSlide(4)">Surface Laptop 3</span>
+                            <span class="slide-title__text" onclick="currentSlide(5)">Phụ kiện Surface</span>
+                        </div>
+                    </div>
+                    <div class="news-hot">
+                        <div class="news-title">
+                            <h2 class="news-title__text">Tin Nổi bật</h2>
+                            <a href="#" class="news-title__link">
+                                Xem thêm
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="news-list">
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/210.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Microsoft xác nhận Windows 11 đang gặp 3 lỗi liên quan đến máy in</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/pro8vslapstudio_spr_donotreup.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Đánh giá Surface Go 3: Bộ xử lý mới, Windows 11, Giá không đổi</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/q5.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Galaxy Unpacked 2 sẽ diễn ra vào ngày 20 tháng 10, ngay sau hai sự kiện lớn của Apple và Google</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/spr.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Nhiều máy tính Trung Quốc không thể nâng cấp lên Windows 11</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/sptuntitled-1.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Surface Go 3 vs Surface Go 2: Cùng giá bán, nên mua phiên bản nào?</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/untitled-106.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Microsoft xác nhận Windows 11 đang gặp sự cố đầu tiên</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/untitled-206.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Tất tần tật các tính năng mới hiện có trên Windows 11 Tất tần tật các tính năng mới hiện có trên Windows 11</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/win11install.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Tất tần tật các tính năng mới hiện có trên Windows 11 Tất tần tật các tính năng mới hiện có trên Windows 11</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/why_windows_11_is_faster_than_windows_10_thumb1200_4-3.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Tất tần tật các tính năng mới hiện có trên Windows 11 Tất tần tật các tính năng mới hiện có trên Windows 11</p>
+                                </div>
+                            </a>
+                            <a href="#" class="news-link">
+                                <div class="news-link-image">
+                                    <img src="./assets/images/HotNews/why_windows_11_is_faster_than_windows_10_thumb1200_4-3.jpg" alt="" class="news-link__img">
+                                </div>
+                                <div class="news-link-heading">
+                                    <p class="news-link__text">Tất tần tật các tính năng mới hiện có trên Windows 11 Tất tần tật các tính năng mới hiện có trên Windows 11</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="product">
+                    <div class="product-title">
+                        <a href="" class="product-title__link">
+                            <h2 class="product-title__text">SẢN PHẨM KHUYẾN MÃI</h2>
+                        </a>
+                    </div>
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <div class="product-col">
+                                <div class="product-wrapimage product-wrapimage--hot">
+                                    <a href="">
+                                        <img src="./assets/images/Product/surface-go-2_03.jpg" alt="" class="product-wrapimage__img">
+                                    </a>
+                                </div>
+                                <h3 class="product-name">
+                                    <a href="" class="product-name__Link">Surface Go 2 | Intel 4425Y / 4GB RAM / 64GB</a>
+                                </h3>
+                                <p class="product-wrapprice">
+                                    <span class="product__price product__price--sale">12.500.000 ₫</span>
+                                    <span class="product__price">13.300.000 ₫</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-col">
+                                <div class="product-wrapimage product-wrapimage--sale product-wrapimage--soldout">
+                                    <a href="">
+                                        <img src="./assets/images/Product/surface-pro-7-i3-4gb-128gb_01.jpg" alt="" class="product-wrapimage__img">
+                                    </a>
+                                </div>
+                                <h3 class="product-name">
+                                    <a href="" class="product-name__Link">Surface Pro 7 | Core i3 / RAM 4GB / SSD 128GB</a>
+                                </h3>
+                                <p class="product-wrapprice">
+                                    <span class="product__price product__price--sale">16.500.000 ₫</span>
+                                    <span class="product__price">18.400.000 ₫</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-col">
+                                <div class="product-wrapimage product-wrapimage--hot">
+                                    <a href="">
+                                        <img src="./assets/images/Product/surface-pro-x_01.jpg" alt="" class="product-wrapimage__img">
+                                    </a>
+                                </div>
+                                <h3 class="product-name">
+                                    <a href="" class="product-name__Link">Surface Pro X | SQ1 / RAM 8GB / SSD 128GB ( LTE )</a>
+                                </h3>
+                                <p class="product-wrapprice">
+                                    <span class="product__price product__price--sale">24.800.000 ₫</span>
+                                    <span class="product__price">27.300.000 ₫</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="product-item">
+                            <div class="product-col">
+                                <div class="product-wrapimage product-wrapimage--hot">
+                                    <a href="">
+                                        <img src="./assets/images/Product/surface-go-2_03.jpg" alt="" class="product-wrapimage__img">
+                                    </a>
+                                </div>
+                                <h3 class="product-name">
+                                    <a href="" class="product-name__Link">Surface Laptop 3 (13,5-inch) | Core i5 / RAM 8GB / SSD 128GB</a>
+                                </h3>
+                                <p class="product-wrapprice">
+                                    <span class="product__price product__price--sale">24.500.000 ₫</span>
+                                    <span class="product__price">27.900.000 ₫</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- News home -->
+                <div class="news-home">
+                    <div class="news-col-4">
+                        <div class="news-heading">
+                            <a href="#" class="news-heading__text">Tin Thị Trường</a>
+                        </div>
+                        <ul class="news-box">
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/NewsHome/q6.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/NewsHome/widgets.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/HotNews/untitled-106.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news-col-4">
+                        <div class="news-heading">
+                            <a href="#" class="news-heading__text">Tin Thị Trường</a>
+                        </div>
+                        <ul class="news-box">
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/NewsHome/q6.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/NewsHome/widgets.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/HotNews/untitled-106.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news-col-4">
+                        <div class="news-heading">
+                            <a href="#" class="news-heading__text">Tin Thị Trường</a>
+                        </div>
+                        <ul class="news-box">
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/NewsHome/q6.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/NewsHome/widgets.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                            <li class="news-box-item">
+                                <a href="#" class="news-box-image">
+                                    <img src="./assets/images/HotNews/untitled-106.jpg" alt="">
+                                </a>
+                                <div class="news-box-info">
+                                    <a href="#">Danh sách các máy tính Microsoft Surface tương thích với Windows 11</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Content -->
+
+        <!-- Begin: Video -->
+        <div class="video">
+            <div class="container">
+                <div class="video-heading">
+                    <a href="#" class="video-heading__text">video</a>
+                </div>
+
+                <ul class="video-list">
+                    <li class="video-item">
+                        <a href="#" class="video-wrapimage">
+                            <img src="./assets/images/Video/hotgirl (5).jpg" alt="" class="video__img">
+                            <span class="video__play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            <span class="video__timefunction">6:17</span>
+                        </a>
+                        <div class="video-info">
+                            <a href="#" class="video-info__name">Surface Pro 8 có gì khác so với Surface Pro 7?</a>
+                            <span class="video-info__publish-time">1 GIỜ</span>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <a href="#" class="video-wrapimage">
+                            <img src="./assets/images/Video/hotgirl (5).jpg" alt="" class="video__img">
+                            <span class="video__play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            <span class="video__timefunction">6:17</span>
+                        </a>
+                        <div class="video-info">
+                            <a href="#" class="video-info__name">Surface Pro 8 có gì khác so với Surface Pro 7?</a>
+                            <span class="video-info__publish-time">1 GIỜ</span>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <a href="#" class="video-wrapimage">
+                            <img src="./assets/images/Video/hotgirl (5).jpg" alt="" class="video__img">
+                            <span class="video__play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            <span class="video__timefunction">6:17</span>
+                        </a>
+                        <div class="video-info">
+                            <a href="#" class="video-info__name">Surface Pro 8 có gì khác so với Surface Pro 7? Surface Pro 8 có gì khác so với Surface Pro 7? Surface Pro 8 có gì khác so với Surface Pro 7?</a>
+                            <span class="video-info__publish-time">1 GIỜ</span>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <a href="#" class="video-wrapimage">
+                            <img src="./assets/images/Video/hotgirl (5).jpg" alt="" class="video__img">
+                            <span class="video__play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            <span class="video__timefunction">6:17</span>
+                        </a>
+                        <div class="video-info">
+                            <a href="#" class="video-info__name">Surface Pro 8 có gì khác so với Surface Pro 7?</a>
+                            <span class="video-info__publish-time">1 GIỜ</span>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <a href="#" class="video-wrapimage">
+                            <img src="./assets/images/Video/hotgirl (5).jpg" alt="" class="video__img">
+                            <span class="video__play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            <span class="video__timefunction">6:17</span>
+                        </a>
+                        <div class="video-info">
+                            <a href="#" class="video-info__name">Surface Pro 8 có gì khác so với Surface Pro 7?</a>
+                            <span class="video-info__publish-time">1 GIỜ</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: Video -->
+
+        <!-- Smart Link -->
+        <div class="smartlink">
+            <div class="container">
+                <div class="smartlink-row">
+                    <div class="smartlink-col-four">
+                        <div class="smartlink__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="smartlink-text">
+                            <h2>GIAO HÀNG TẬN NƠI</h2>
+                            <p>Miễn phí giao COD toàn quốc</p>
+                        </div>
+                    </div>
+                    <div class="smartlink-col-four">
+                        <div class="smartlink__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="smartlink-text">
+                            <h2>GIAO HÀNG TẬN NƠI</h2>
+                            <p>Miễn phí giao COD toàn quốc</p>
+                        </div>
+                    </div>
+                    <div class="smartlink-col-four">
+                        <div class="smartlink__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="smartlink-text">
+                            <h2>GIAO HÀNG TẬN NƠI</h2>
+                            <p>Miễn phí giao COD toàn quốc</p>
+                        </div>
+                    </div>
+                    <div class="smartlink-col-four">
+                        <div class="smartlink__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="smartlink-text">
+                            <h2>GIAO HÀNG TẬN NƠI</h2>
+                            <p>Miễn phí giao COD toàn quốc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col-three">
+                    <div class="news-heading">
+                        <h3 class="news-heading__title-footer">SurfacePro.vn</h3>
+                    </div>
+                    <span class="footer__text">Cung cấp các dòng máy tính bảng Surface chính hãng mới và cũ giá tốt nhất. Chính sách bảo hành và hỗ trợ vượt trội.</span>
+                    <h6 class="footer__title">Hỗ trợ thanh toán</h6>
+                    <div class="payment">
+                        <img src="./assets/images/Footer/payment.png" alt="" class="payment__img">
+                    </div>
+                    <h6 class="footer__title">
+                        Giờ mở cửa: <span class="footer__text footer__text--inline">9h00 - 21h00</span> <span class="time-activity">Đang mở cửa</span>
+                    </h6>
+                    <span class="footer__text footer__text--inline">Email: <a href="#" class="email__link">lienhe@surfacepro.vn</a></span>
+                </div>
+                <div class="footer-col-three">
+                    <div class="news-heading">
+                        <h3 class="news-heading__title-footer">Chi nhánh</h3>
+                    </div>
+                    <h3 class="footer-area">KHU VỰC HỒ CHÍ MINH</h3>
+                    <span class="footer__text footer__text--area">
+                        <i class="fas fa-map-signs"></i>
+                        69 Lê Văn Sỹ, Phường 13, Phú Nhuận, TP. Hồ Chí Minh
+                    </span>
+                    <span class="footer__text footer__text--area">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <a href="#" class="footer__phone"> 0915.111111</a>
+                        -
+                        <a href="#" class="footer__phone"> 0826.242424</a>
+                    </span>
+                    <h3 class="footer-area">KHU VỰC HÀ NỘI</h3>
+                    <span class="footer__text footer__text--area">
+                        <i class="fas fa-map-signs"></i>
+                        Số 26, Ngõ 38 Trần Quý Kiên, Dịch Vọng, Cầu Giấy, Hà Nội
+                    </span>
+                    <span class="footer__text footer__text--area">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <a href="#" class="footer__phone"> 0915.111111</a>
+                        -
+                        <a href="#" class="footer__phone"> 0813.030303</a>
+                    </span>
+                </div>
+                <div class="footer-col-three">
+                    <div class="news-heading">
+                        <h3 class="news-heading__title-footer">Hỗ trợ khách hàng</h3>
+                    </div>
+                   <div class="footer-list">
+                       <a href="#" class="footer__link">Chính sách bảo hành</a>
+                       <a href="#" class="footer__link">Chính sách đổi trả</a>
+                       <a href="#" class="footer__link">Chính sách giao hàng</a>
+                       <a href="#" class="footer__link">Phương thức thanh toán</a>
+                       <a href="#" class="footer__link">Tra cứu thông tin bảo hành</a>
+                       <a href="#" class="footer__link">Câu hỏi thường gặp mua hàng</a>
+                   </div>
+                   <div class="footer-image">
+                       <img src="./assets/images/Footer/Screenshot 2021-10-13 192448.png" alt="" class="footer__img">
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-menu">
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+            <p class="footer-copyright">© 2016-2021 <a href="./index.html">surfacepro.vn</a> All Rights Reserved.</p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="layer-opacity"></div>
+    <script src="./assets/javascript.js"></script>
+</body>
+</html>

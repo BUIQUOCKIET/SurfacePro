@@ -328,4 +328,9 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+    
+    .call-now-wrapper,
+    .message-wrap {
+        display: none;
+    }
 }

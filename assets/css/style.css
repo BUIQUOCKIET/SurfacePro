@@ -156,6 +156,10 @@ html {
     transition: all 0.3s;
 }
 
+.product-name {
+    min-height: 63px;
+}
+
 .product-name__Link {
     text-decoration: none;
     font-size: 1.4rem;
@@ -225,7 +229,8 @@ html {
     background-color: #21262d;
 }
 
-.layer-opacity {
+.layer-opacity,
+.layer-opacity-form {
     position: absolute;
     top: 0;
     left: 0;
@@ -672,9 +677,9 @@ html {
 
 .slide-title__text {
     width: 20%;
-    padding: 10px 0;
+    padding: 4px 0;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--color-text-gray);
     border-right: 1px solid var(--color-text-gray);
 }
@@ -897,6 +902,7 @@ html {
 }
 
 .news-box-info {
+    min-height: 44.8px;
     width: calc(100% - 120px);
     float: right;
 }
@@ -1023,7 +1029,7 @@ html {
 }
 
 .video-info {
-    height: 55px;
+    min-height: 55px;
 }
 
 .video-info__name {
@@ -1262,4 +1268,452 @@ html {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
+}
+
+/* -------------------------------------- Validation Form -------------------------------------- */
+.main-form {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    animation: fade-in 0.2s linear;
+}
+
+.form-1,
+.form-2 {
+    width: 360px;
+    min-height: 100px;
+    border-radius: 3px;
+    margin: 25px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    align-self: center;
+    position: absolute;
+    z-index: 120;
+}
+
+.form-heading {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    font-size: 1.6rem;
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+
+.form-message {
+    font-size: 1.2rem;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+  
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.submit {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: var(--color-main);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submit:hover {
+    background-color: var(--color-sub);
+}
+
+.layer-opacity-form-1,
+.layer-opacity-form-2 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    z-index: 110;
+}
+
+@keyframes fade-in {
+    from { opacity: 0.6}
+    to {opacity: 1;}
+}
+
+/* ---------------------------------------------- phone Call ---------------------------------------------- */
+.call-now-wrapper {
+    height: 50px;
+    border-radius: 50px;
+    background: #0ba4d2;
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    z-index: 9999;
+}
+
+.call-text {
+    line-height: 50px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 15px 0 60px;
+}
+
+.call-circle {
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+    border: 2px solid rgba(30, 30, 30, .4);
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    animation: call-circle 1.2s infinite ease-in-out;
+}
+
+.call-circle-fill {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    opacity: 1;
+    animation: call-circle-fill 2.3s infinite ease-in-out;
+
+}
+
+.call-circle-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0ba4d2 url(../images/quick-call-button-phone.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: call-circle-button 1s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes call-circle {
+    0% {
+        transform: scale(.5);
+        opacity: .1;
+    }
+    30% {
+        transform: scale(.7);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: .1;
+    }
+}
+
+@keyframes call-circle-fill {
+    0% {
+        transform: scale(.7);
+        opacity: .2;
+    }
+    50% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    100% {
+        transform: scale(.7);
+        opacity: .2;
+    }
+}
+
+@keyframes call-circle-button {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(-25deg);
+    }
+    20% {
+        transform: rotate(25deg);
+    }
+    30% {
+        transform: rotate(-25deg);
+    }
+    40% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* ---------------------------------------------- Message Contact ---------------------------------------------- */
+
+
+.message-wrap {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    z-index: 9999;   
+}
+
+.message-contact {
+    width: 375px;
+    min-height: 430px;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 70px;
+    right: 0px;
+}
+
+.headding-control {
+    display: flex;
+    align-items: center;
+}
+
+.headding-control__img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: auto;
+}
+
+.headding-control__ellipsis {
+    margin-right: 14px;
+}
+
+.headding-control__ellipsis,
+.heading-control__close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .05);
+    text-align: center;
+}
+
+.headding-control__ellipsis:hover,
+.heading-control__close:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.headding-control__ellipsis i,
+.heading-control__close i{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.message-title {
+    margin: 24px 0px;
+}
+
+.message-title__name {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.4;
+}
+
+.message-title__des {
+    font-size: 1.4rem;
+    color: rgb(168, 167, 167);
+    line-height: 1.4;
+}
+
+.message-title__question {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.message-option {
+    display: block;
+    width: 360px;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 86px;
+    left: 8px;
+    z-index: 1;
+}
+.message-option--hide {
+    display: none
+}
+
+.message-option::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.1);
+    transform: rotate(-45deg);
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+    left: 78.6%;
+    z-index: 1;
+}
+
+.message-option__item {
+    width: 100%;
+    border-radius: 10px;
+    padding: 4px 0 4px 8px;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.6;
+}
+.message-option__item:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.message-wrap__btn {
+    cursor: pointer;
+    min-height: 52px;
+    min-width: 215px;
+    width: 335px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0 30px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(11, 164, 210);
+}
+
+.message-wrap__btn i {
+    margin-right: 10px;
+}
+
+.message-wrap__btn--plugin {
+    color: #fff;
+    background-color: rgb(11, 164, 210);
+}
+
+.message-wrap__btn--continue {
+    color: #000;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.message-bottom-info {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(168, 167, 167);
+    line-height: 1.4;
+}
+
+.message-bottom-info a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.message-bottom-info a:hover {
+    text-decoration: underline;
+}
+
+.message-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(11, 164, 210);
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.message-button i {
+    font-size: 42px;
+    color: #fff;
+    line-height: 60px;
+}
+
+/* Handle show and hide Message */
+.show-message {
+    animation: showMessage 0.3s ease-in;
+}
+
+@keyframes showMessage {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom right;
+    }
+    75% {
+        transform: scale(1.03, 1.03);
+        transform-origin: bottom right;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right;
+    }
+}
+
+
+.hide-message {
+    transform: scale(0, 0);
+    animation: hideMessage 0.2s ease-in;
+}
+
+@keyframes hideMessage {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom right;
+    }
 }
